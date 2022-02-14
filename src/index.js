@@ -4,7 +4,7 @@ const parseOrigin = (url) => {
   const { protocol, hostname, port } = parseUrl(url);
 
   return `${protocol}//${hostname}${port ? `:${port}` : ''}`;
-}
+};
 
 /**
  * Get the URL origin from a Node request object.

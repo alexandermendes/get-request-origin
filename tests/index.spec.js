@@ -17,8 +17,8 @@ describe('Server', () => {
       const req = {
         url: 'http://example.com/page',
         headers: {
-          host: 'host.com'
-        }
+          host: 'host.com',
+        },
       };
 
       expect(getRequestOrigin(req)).toBe('http://host.com');
@@ -28,8 +28,8 @@ describe('Server', () => {
       const req = {
         url: 'http://example.com/page',
         headers: {
-          host: 'host.com:1234'
-        }
+          host: 'host.com:1234',
+        },
       };
 
       expect(getRequestOrigin(req)).toBe('http://host.com:1234');
@@ -40,8 +40,8 @@ describe('Server', () => {
         url: '/page',
         secure: true,
         headers: {
-          host: 'host.com'
-        }
+          host: 'host.com',
+        },
       };
 
       expect(getRequestOrigin(req)).toBe('https://host.com');
@@ -54,8 +54,8 @@ describe('Server', () => {
           encrypted: true,
         },
         headers: {
-          host: 'host.com'
-        }
+          host: 'host.com',
+        },
       };
 
       expect(getRequestOrigin(req)).toBe('https://host.com');
