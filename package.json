@@ -1,6 +1,6 @@
 {
   "name": "get-request-origin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the URL origin from a Node request object.",
   "author": "Alex Mendes",
   "license": "ISC",
