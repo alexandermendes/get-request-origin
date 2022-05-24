@@ -19,7 +19,7 @@ export const getRequestOrigin = (req) => {
 
   const { protocol: urlProtocol } = parseUrl(url);
 
-  const isSecure = req.secure || req.connection?.encrypted;
+  const isSecure = req.secure || (req.connection || {}).encrypted;
   const fallbackProtocol = isSecure ? 'https:' : 'http:';
   const protocol = urlProtocol || fallbackProtocol;
 
