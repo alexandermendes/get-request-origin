@@ -3,10 +3,14 @@
     "airbnb-base",
     "plugin:jest/recommended"
   ],
-  "parser": "@babel/eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "plugins": [
     "jest"
   ],
+  "settings": {
+    "import/parsers": { "@typescript-eslint/parser": [".ts"] },
+    "import/resolver": {"typescript": {} }
+  },
   "env": {
     "jest/globals": true,
     "browser": true
@@ -14,6 +18,8 @@
   "rules": {
     "global-require": "off",
     "import/prefer-default-export": "off",
-    "jest/no-done-callback": "off"
+    "import/extensions": ["error", "never"],
+    "jest/no-done-callback": "off",
+    "import/no-unresolved": "off"
   }
 }
