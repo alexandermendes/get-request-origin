@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/alexandermendes/get-request-origin/compare/v1.0.1...v1.1.0) (2023-04-28)
+
+
+### Features
+
+* add typescript ([b2b82a4](https://github.com/alexandermendes/get-request-origin/commit/b2b82a4d1fbea7cd2db10a3bce5f30709fd64443))
+
 ## [1.0.1](https://github.com/alexandermendes/get-request-origin/compare/v1.0.0...v1.0.1) (2022-05-24)
 
 
